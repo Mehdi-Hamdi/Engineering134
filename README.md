@@ -1,8 +1,17 @@
-Hello
 
-# Title 
-### subtitle 
-###### smallest subtitle
+# Mehdi's Sparta Global respository 
+
+## Personal info
+- Based in NW London
+- Aged 24
+- Training course: C# SDET
+- Degree: Chemical engineering
+- Github: https://github.com/Mehdi-Hamdi/Engineering134.git
+
+## Course Overview
+- [x] Week 1 - Business week
+- [ ] Week 2
+
 
 ## Lists
 - 1
@@ -24,11 +33,11 @@ Hello
 
 ## Github markdown
 
-'this is a code snippet'
+`this is a code snippet`
 
-'''c#
+```c#
 int i = 10 + c
-'''
+```
 
 - [x] done
 - [ ] not done
