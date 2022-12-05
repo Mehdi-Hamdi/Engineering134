@@ -1,0 +1,15 @@
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\bin\Debug\net6.0\HelloWorldApp.exe
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\bin\Debug\net6.0\HelloWorldApp.deps.json
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\bin\Debug\net6.0\HelloWorldApp.runtimeconfig.json
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\bin\Debug\net6.0\HelloWorldApp.dll
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\bin\Debug\net6.0\HelloWorldApp.pdb
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.csproj.AssemblyReference.cache
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.AssemblyInfoInputs.cache
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.AssemblyInfo.cs
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.csproj.CoreCompileInputs.cache
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.dll
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\refint\HelloWorldApp.dll
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.pdb
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\HelloWorldApp.genruntimeconfig.cache
+C:\Users\Mahdi\Documents\Engineering134\week 2\HelloWorldApp\HelloWorldApp\obj\Debug\net6.0\ref\HelloWorldApp.dll
