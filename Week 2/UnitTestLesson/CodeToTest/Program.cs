@@ -1,10 +1,31 @@
-﻿namespace CodeToTest
+﻿namespace CodeToTest;
+
+public class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        int timeOfDay = 21;
+        Console.WriteLine(GetGreeting(timeOfDay));
+    }
+
+    public static string GetGreeting(int timeOfDay)
+    {
+        string message;
+        if (timeOfDay >= 5 && timeOfDay <= 12)
         {
-            Console.WriteLine("Hello, World!");
+            message = "Good morning!";
         }
+        else if (timeOfDay >= 12 && timeOfDay <= 18)
+        {
+            message = "Good afternoon!";
+        }
+        else
+        {
+            message = "Good evening!";
+        }
+        return message;
     }
 }
+
+
+
