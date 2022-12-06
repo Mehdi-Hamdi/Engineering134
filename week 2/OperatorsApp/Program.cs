@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 internal class program
 {
@@ -26,19 +26,37 @@ internal class program
         var weeksToBirthday = totalDaysToBirthday / daysInAWeek;
         var days = totalDaysToBirthday % daysInAWeek;
 
-        Console.WriteLine(EvenOdd(5));
-    }
-    public static bool EvenOdd(int num)
-    {
-        return num % 2 == 0;
-    }
-    public static int GetStones(int totalPounds) 
-    {
-    return totalPounds / 14; 
-    }
-    public static int GetPounds(int totalPounds)
-    { 
-        return totalPounds % 14;
-    }
+        bool isWearingParachute = false;
+        bool nerves = true;
+        if (isWearingParachute || nerves)
+        {
+            Console.WriteLine("Congratulations, you have made a successful jump!");
+        }
+        string greeting = null;
 
-}
+
+
+
+
+
+        public static bool EvenOdd(int num)
+        {
+            return num % 2 == 0;
+        }
+        public static int GetStones(int totalPounds)
+        {
+            return totalPounds / 14;
+        }
+        public static int GetPounds(int totalPounds)
+        {
+            return totalPounds % 14;
+        }
+
+        bool isWearingParachute = false;
+        bool nerves = true;
+        if (isWearingParachute || nerves)
+        {
+            Console.WriteLine("Congratulations, you have made a successful jump!");
+        }
+
+    }
