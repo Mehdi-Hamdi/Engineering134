@@ -51,12 +51,59 @@ namespace Op_CtrlFlow
         public static string Grade(int mark)
         {
             var grade = "";
+
+
+            if (mark >= 60 && mark <= 100)
+            {
+                if (mark >= 75)
+                {
+                    grade = "Pass with Distinction";
+                }
+                else
+                {
+                    grade = "Pass with Merit";
+                }
+            }
+            else
+            {
+                if (mark >= 40)
+                {
+                    grade = "Pass";
+                }
+                else
+                {
+                    grade = "Fail";
+                }
+            }
             return grade;
         }
 
         public static int GetScottishMaxWeddingNumbers(int covidLevel)
         {
-            return 0;
+            int maxNumbers;
+            switch (covidLevel)
+            {
+                case 1:
+                    maxNumbers = 100;
+                    break;
+
+                case 2:
+                    maxNumbers = 50;
+                    break;
+
+                case 3:
+                    maxNumbers = 50;
+                    break;
+
+                case 4:
+                    maxNumbers = 20;
+                    break;
+
+                default:
+                    maxNumbers = 200;
+                    break;
+            }
+            return maxNumbers;
         }
     }
 }
