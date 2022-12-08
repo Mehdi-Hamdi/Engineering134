@@ -1,10 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace Op_CtrlFlow
 {
     public class Exercises
     {
         public static bool MyMethod(int num1, int num2)
+        
         {
             return num1 == num2 ? false : (num1 % num2) == 0;
         }
@@ -17,7 +20,7 @@ namespace Op_CtrlFlow
         {
             if (nums.Count == 0)
             {
-                return 0;
+                throw new ArgumentOutOfRangeException("The list is empty!");
             }
             else
             {
@@ -39,6 +42,10 @@ namespace Op_CtrlFlow
         // "Free" if they are under 5
         public static string TicketType(int age)
         {
+            if (age < 0)
+            {
+                throw new ArgumentOutOfRangeException("age cannot be less than 0");
+            }
             string ticketType = string.Empty;
             switch (age)
             {
@@ -66,6 +73,10 @@ namespace Op_CtrlFlow
 
         public static string Grade(int mark)
         {
+            if (mark < 0 || mark > 100)
+            {
+                throw new ArgumentOutOfRangeException("Mark cannot be outside the range 0-100");
+            }
             var grade = "";
 
 
@@ -96,6 +107,10 @@ namespace Op_CtrlFlow
 
         public static int GetScottishMaxWeddingNumbers(int covidLevel)
         {
+            if (covidLevel < 0 || covidLevel > 4)
+            {
+                throw new ArgumentOutOfRangeException("covid level cannout be out of the range 0-4");
+            }
             int maxNumbers;
             switch (covidLevel)
             {

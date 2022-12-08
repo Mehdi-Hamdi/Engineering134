@@ -1,11 +1,15 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
+using NUnit.Framework;
 using Op_CtrlFlow;
+using System;
 using System.Collections.Generic;
 
 namespace Op_CtrlFlow_Tests
 {
     public class Exercises_Tests
     {
+       
+        
         [TestCase(1, 1)]
         [TestCase(3, 2)]
         public void WhenEqual_ReturnFalse(int num1, int num2)
@@ -35,6 +39,8 @@ namespace Op_CtrlFlow_Tests
             var myList = new List<int>() { };
             Assert.That(Exercises.Average(myList), Is.EqualTo(0));
         }
+        
+
 
         [TestCase(100, "OAP")]
         [TestCase(60, "OAP")]
@@ -86,7 +92,18 @@ namespace Op_CtrlFlow_Tests
             string output = Exercises.Grade(mark);
             Assert.That(output, Is.EqualTo("Pass with Distinction"));
         }
-        [TestCase(0)]
+        
+        [TestCase(-1)]
+        [TestCase(101)]
+        public void whenMarkIsOutsideOfRange_Grade_ThrowsArgumentOutOfRangeException(int mark)
+        {
+            Assert.That(() => Exercises.Grade(mark), Throws.TypeOf<ArgumentOutOfRangeException>().With.Message.Contain
+                ("Mark cannot be outside the range 0-100"));
+        }
+    
+
+
+    [TestCase(0)]
         public void WhenLevel0_Returns200(int covidLevel)
         {
             int output = Exercises.GetScottishMaxWeddingNumbers(covidLevel);
