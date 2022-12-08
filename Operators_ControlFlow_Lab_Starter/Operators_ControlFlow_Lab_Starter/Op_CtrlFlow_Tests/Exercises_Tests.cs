@@ -52,7 +52,7 @@ namespace Op_CtrlFlow_Tests
             Assert.That(result, Is.EqualTo(expected));
         }
         [TestCase(59)]
-        [TestCase(49)]
+        [TestCase(48)]
         [TestCase(40)]
         public void WhenGradeLessThan60GreaterThan39_ReturnsPass(int mark)
         {
@@ -70,7 +70,7 @@ namespace Op_CtrlFlow_Tests
         }
 
         [TestCase(39)]
-        [TestCase(25)]
+        [TestCase(20)]
         [TestCase(0)]
         public void WhenGradeIsLessThan40_ReturnsFail(int mark)
         {
@@ -79,7 +79,7 @@ namespace Op_CtrlFlow_Tests
         }
 
         [TestCase(75)]
-        [TestCase(85)]
+        [TestCase(90)]
         [TestCase(100)]
         public void WhenGradeGreaterThan74_ReturnsPass(int mark)
         {

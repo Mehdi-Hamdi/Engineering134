@@ -10,9 +10,25 @@ namespace Op_CtrlFlow
         }
 
         // returns the average of the array nums
+         
         public static double Average(List<int> nums)
+
+
         {
-            return -1;
+            if (nums.Count == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double total = 0;
+                foreach (int num in nums)
+                {
+                    total += num;
+
+                }
+                return total / nums.Count;
+            }
         }
 
         // returns the type of ticket a customer is eligible for based on their age
