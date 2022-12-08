@@ -4,11 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(AvailableClassifications(15));
+            Console.WriteLine(AvailableClassifications(-2));
         }
         public static string AvailableClassifications(int ageOfViewer)
         {
             string result;
+
+            if (ageOfViewer < 0) 
+            {
+                throw new ArgumentOutOfRangeException("Age cannot be less than 0");
+            }
+
             if (ageOfViewer < 12)
             {
                 result = "U & PG films are available.";
