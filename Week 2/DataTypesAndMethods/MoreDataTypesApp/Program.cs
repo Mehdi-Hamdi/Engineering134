@@ -13,6 +13,8 @@ namespace MoreDataTypesApp
             OneDArrays();
             MultiDArrays();
             JaggedArrays();
+            DateTimeMethods();
+            Enums();
         }
 
         public static string StringBuilderExercise(string myString)
@@ -113,7 +115,41 @@ namespace MoreDataTypesApp
 
 
         }
-           
-        
+
+        public static void DateTimeMethods()
+        {
+            var now = DateTime.Now;
+            Console.WriteLine($"Then time now is {now}");
+            Console.WriteLine($"The time in ticks is {now.Ticks}");
+            var tomorrow = now.AddDays(1);
+            Console.WriteLine($"Tomorrow it will be {tomorrow} which is {tomorrow.Ticks} ticks");
+
+
+        }   
+        public static void Enums()
+        {
+            Suit theSuit = Suit.HEARTS;
+            if(theSuit == Suit.SPADES)
+            {
+                Console.WriteLine($"Suit is {Suit.SPADES}");
+            }
+            else
+            {
+                Console.WriteLine($"the suit is {theSuit} not {Suit.SPADES}");
+            }
+            var mediumValue = (int)Size.MEDIUM;
+            var mySize = (Size)50;
+        }
+ 
+    }
+
+    public enum Suit
+    {
+        HEARTS, CLUBS, DIAMONDS, SPADES
+    }
+
+    public enum Size
+    {
+        SMALL = 10, MEDIUM = 20, Large = 50
     }
 }
