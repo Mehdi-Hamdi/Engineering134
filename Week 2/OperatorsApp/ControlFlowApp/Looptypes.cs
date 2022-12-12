@@ -43,9 +43,23 @@ namespace ControlFlowApp
             
         }
 
-        internal static string HighestWhileLoop(List<int> nums)
+        internal static int HighestWhileLoop(List<int> nums)
         {
-            
-        }
-    }
+            int i = 0;
+            int highest = nums[i];
+            while (i < (nums.Count - 1))
+            {
+                if (nums[i + 1] > highest)
+                {
+                    highest = nums[i + 1];
+                }
+                i++;
+
+            }
+            return highest;
+
+        }  
+
+    }        
+    
 }
