@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,17 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="CountLettersTests.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     <PackageReference Include="NUnit" Version="3.13.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Op_CtrlFlow_Lib\Op_CtrlFlow.csproj" />
+    <ProjectReference Include="..\Methods_Lib\Methods_Lib.csproj" />
   </ItemGroup>
 
 </Project>

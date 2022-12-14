@@ -1,4 +1,6 @@
-﻿
+﻿using System.Globalization;
+
+namespace OperatorsApp;
 
 internal class program
 {
@@ -27,13 +29,36 @@ internal class program
         var days = totalDaysToBirthday % daysInAWeek;
 
         Console.WriteLine(EvenOdd(5));
+        int mass = 156;
+        Console.WriteLine(mass + " pounds is equal to: " + GetStones(mass) + " stones and " + GetPounds(mass) + " pounds.");
     }
     public static bool EvenOdd(int num)
     {
         return num % 2 == 0;
     }
-        
 
+    public static bool JumpOutOfAirplane()
+    {
+        throw new NotImplementedException();
+    }
+
+    public static int GetStones(int totalPounds)
+    {
+        if (totalPounds < 0)
+        {
+            throw new ArgumentOutOfRangeException("Pounds cannot be less than 0");
+        }
+    
+    
+    
+    
+        return totalPounds / 14;
+    }
+    
+     public static int GetPounds(int totalPounds)
+    {
+        return totalPounds % 14;
+    }
 
 
 

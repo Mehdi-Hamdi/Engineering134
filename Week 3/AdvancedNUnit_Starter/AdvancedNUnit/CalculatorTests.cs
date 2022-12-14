@@ -4,10 +4,22 @@ using System.Linq;
 
 namespace AdvancedNUnit
 {
+    [TestFixture]
     public class CalculatorTests
     {
+        List<int> myList;
+
+        [OneTimeSetUp]
+        public void OneTimeSetup()
+        {
+
+        }
         [SetUp]
-        public void Setup() { }
+        public void Setup() 
+        {
+            myList = new List<int> { 1, 2, 3 };
+        
+        }
 
         [Test]
         public void Add_Always_ReturnsExpectedResult()
@@ -19,6 +31,12 @@ namespace AdvancedNUnit
             var result = subject.Add();
             // Assert
             Assert.That(result, Is.EqualTo(expectedResult), "optional failure message");
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            //i run after every test
         }
 
         [Test]
@@ -72,6 +90,7 @@ namespace AdvancedNUnit
             Assert.That(arraytest, Has.Exactly(2).InRange(1, 10));
         }
 
+        
     }
     
 }
