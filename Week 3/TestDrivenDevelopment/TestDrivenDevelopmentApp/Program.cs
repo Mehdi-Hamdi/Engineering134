@@ -1,10 +1,35 @@
-﻿namespace TestDrivenDevelopmentApp
+﻿namespace TestDrivenDevelopmentApp;
+
+public class Program
 {
-    internal class Program
+    public static string FizzBuzz(int maxValue)
     {
-        static void Main(string[] args)
+        string outputString = "";
+        for (int i = 1; i <=maxValue; i++)
         {
-            Console.WriteLine("Hello, World!");
+            if (i % 5 == 0 && i % 3 == 0)
+            {
+                outputString += "FizzBuzz "; 
+            }
+            else if (i % 5 == 0)
+            {
+                outputString += "Buzz ";
+            }
+            else if (i % 3 == 0)
+            {
+                outputString += "Fizz ";
+            }
+            else
+            {
+                outputString += i + " ";
+            }
+                
         }
+        return outputString.TrimEnd();
+    }
+
+    static void Main(string[] args)
+    {
+        
     }
 }
