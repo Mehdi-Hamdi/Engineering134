@@ -15,10 +15,10 @@ namespace AdvancedNUnit
 
         }
         [SetUp]
-        public void Setup() 
+        public void Setup()
         {
             myList = new List<int> { 1, 2, 3 };
-        
+
         }
 
         [Test]
@@ -50,14 +50,14 @@ namespace AdvancedNUnit
             subject.Num1 = 7;
             Assert.That(subject.DivisibleBy3(), Is.False);
             Assert.That(subject.ToString(), Does.Contain("Calculator"));
-      
+
         }
 
         [Test]
         public void StringConstraints()
         {
             var subject = new Calculator { Num1 = 2, Num2 = 4 };
-            
+
             var expectedStr = "AdvancedNUnit.Calculator";
             Assert.That(subject.ToString(), Is.EqualTo(expectedStr));
             Assert.That(subject.ToString(), Does.Not.Contain("Potato").IgnoreCase);
@@ -71,8 +71,8 @@ namespace AdvancedNUnit
             var myDiceRolls2 = new List<int> { 1, 6 };
 
             Assert.That(myDiceRolls[0], Is.InRange(1, 6));
-            Assert.That(myDiceRolls[0], Is.All.InRange(1, 6));
-            Assert.That(myDiceRolls, Has.Member(1));
+            Assert.That(myDiceRolls, Is.All.InRange(1, 6));
+            Assert.That(myDiceRolls, Has.Member(6));
         }
 
         [Test]
@@ -86,11 +86,27 @@ namespace AdvancedNUnit
         [Test]
         public void Array2inTest()
         {
-            int[] arraytest = {23, 31, 5, 6, 43};
+            int[] arraytest = { 23, 31, 5, 6, 43 };
             Assert.That(arraytest, Has.Exactly(2).InRange(1, 10));
         }
 
+        [TestCaseSource("Add Cases")]
+        public void Add_Always_ReturnsExpectedResult(int x, int y, int expResult)
+        {
+            var subject = new Calculator { Num1 = x, Num2 = y };
+            Assert.That(subject.Add(), Is.EqualTo(expResult));
+
+        }
+
+        private static object[] AddCases =
+        {
+            new int[] {2 , 4 ,6},
+            new int[] {-3, 5, 7}
+        };
+
+    
         
+
     }
     
 }

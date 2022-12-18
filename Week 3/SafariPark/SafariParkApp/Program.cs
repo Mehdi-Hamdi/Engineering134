@@ -1,10 +1,14 @@
-﻿namespace SafariParkApp
+﻿namespace SafariParkApp;
+
+public class Program
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Person alex = new Person("Alex", "Blunt", 18);
+        Console.WriteLine(alex.FullName());
+
+        Person mehdi = new Person("Mehdi", "Hamdi");
+        Console.WriteLine(mehdi.Age);
+
     }
 }

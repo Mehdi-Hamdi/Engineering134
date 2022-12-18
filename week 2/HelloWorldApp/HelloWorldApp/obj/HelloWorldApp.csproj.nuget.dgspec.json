@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mahdi\\Documents\\Engineering134\\week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj": {}
+    "C:\\Users\\Mahdi\\Documents\\Engineering134\\Week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mahdi\\Documents\\Engineering134\\week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj": {
+    "C:\\Users\\Mahdi\\Documents\\Engineering134\\Week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahdi\\Documents\\Engineering134\\week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj",
+        "projectUniqueName": "C:\\Users\\Mahdi\\Documents\\Engineering134\\Week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj",
         "projectName": "HelloWorldApp",
-        "projectPath": "C:\\Users\\Mahdi\\Documents\\Engineering134\\week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj",
+        "projectPath": "C:\\Users\\Mahdi\\Documents\\Engineering134\\Week 2\\HelloWorldApp\\HelloWorldApp\\HelloWorldApp.csproj",
         "packagesPath": "C:\\Users\\Mahdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahdi\\Documents\\Engineering134\\week 2\\HelloWorldApp\\HelloWorldApp\\obj\\",
+        "outputPath": "C:\\Users\\Mahdi\\Documents\\Engineering134\\Week 2\\HelloWorldApp\\HelloWorldApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mahdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
