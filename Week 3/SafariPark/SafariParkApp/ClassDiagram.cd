@@ -3,14 +3,15 @@
   <Class Name="SafariParkApp.Person">
     <Position X="3" Y="0.75" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAABACAAIAAAEEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAABICAAIAgAEEAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SafariParkApp.Program">
     <Position X="7.75" Y="1" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
