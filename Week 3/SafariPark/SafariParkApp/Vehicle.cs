@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace SafariParkApp;
 
-public abstract class Vehicle : IMoveable
+public abstract class Vehicle : IMoveable, IEquatable<Vehicle?>
 {
     private int _capacity;
     private int _numPassengers;
@@ -39,6 +34,23 @@ public abstract class Vehicle : IMoveable
         return $"Moving along {times} times";
     }
 
+    public override bool Equals(object? obj)
+    {
+        return Equals(obj as Vehicle);
+    }
+
+    public bool Equals(Vehicle? other)
+    {
+        return other is not null &&
+               _capacity == other._capacity &&
+               Speed == other.Speed;
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(_capacity, Speed);
+    }
+
     //Constructors
     public Vehicle()
     {
@@ -51,8 +63,17 @@ public abstract class Vehicle : IMoveable
         Speed = speed;
     }
 
+    public static bool operator ==(Vehicle? left, Vehicle? right)
+    {
+        return EqualityComparer<Vehicle>.Default.Equals(left, right);
+    }
+
+    public static bool operator !=(Vehicle? left, Vehicle? right)
+    {
+        return !(left == right);
+    }
 }
- public class Airplane : Vehicle
+ public class Airplane : Vehicle, IEquatable<Airplane?>, IComparable<Airplane>
 {
     private string _airline;
     private int _altitude;
@@ -102,4 +123,48 @@ public abstract class Vehicle : IMoveable
     {
         return base.ToString();
     }
+
+    public override bool Equals(object? obj)
+    {
+        return Equals(obj as Airplane);
+    }
+
+    public bool Equals(Airplane? other)
+    {
+        return other is not null &&
+               NumPassengers == other.NumPassengers &&
+               base.Equals(other);
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(NumPassengers, Speed);
+    }
+
+    public int CompareTo(Airplane? other)
+    {
+        if (Altitude > other.Altitude)
+        {
+            return 1;
+        }
+        else if (Altitude == other.Altitude)
+        {
+            return 0;
+        }
+        else
+        {
+            return -1; 
+        }
+    }
+
+    public static bool operator == (Airplane left, Airplane right)
+    {
+       return EqualityComparer<Airplane>.Default.Equals(left, right);
+    }
+
+    public static bool operator != (Airplane left, Airplane right)
+    {
+        return !(left == right);
+    }
 }    
+

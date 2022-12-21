@@ -11,7 +11,7 @@ public class Tests
 
         int result = Program.Add(input);
         
-        Assert.AreEqual(3, result);
+        Assert.That(3, Is.EqualTo(result));
         
     }
 

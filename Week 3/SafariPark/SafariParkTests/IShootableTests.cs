@@ -3,7 +3,7 @@ using SafariParkApp;
 
 namespace SafariParkTests;
 
-internal class IShootableTests
+public class IShootableTests
 {
     [Test]
     public void GivenAHunterWithACamera_WhenTheyShoot_GetClick()
