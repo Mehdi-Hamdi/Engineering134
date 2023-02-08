@@ -31,11 +31,7 @@ namespace Collections_Lib
                 {
                     StartingWithAList.Add(str);
                 }
-                else
-                {
-                
-                }
-                
+                else { }
             }
             return StartingWithAList;
         }

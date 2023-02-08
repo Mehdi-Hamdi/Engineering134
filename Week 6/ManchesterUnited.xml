@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<footballClub name="Manchester United">
+<player>
+<name>Bruno Fernandes</name>
+<nationality>Portugese</nationality>
+<age>28</age>
+</player>
+<player>
+<name>Luke Shaw</name>
+<nationality>English</nationality>
+<age>27</age>
+</player>
+<player>
+<name>Raphael Varane</name>
+<nationality>French</nationality>
+<age>29</age>
+</player>
+</footballClub>

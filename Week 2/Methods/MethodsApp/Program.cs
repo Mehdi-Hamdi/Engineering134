@@ -26,7 +26,7 @@ public class Program
         Console.WriteLine($"{person.Item1} {person.Item2} is {person.Item3} years old.");
 
         int age = 24;
-        var student = (fName: "Mehdi", lName: "Hamdi", age: age);
+        var student = (fName: "Mehdi", lName: "Hamdi", age);
         Console.WriteLine($"{student.fName} {student.lName} is {student.age} years old.");
 
         //tuples as a return type
